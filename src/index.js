@@ -6,9 +6,12 @@ import { ThemeProvider } from '@emotion/react';
 
 const theme = {
   colors: {
-    black: 'black',
+    dark: '#041d51',
+    greey: '#313131',
     white: 'white',
-    accent: 'tomato',
+    accent: '#739ceda4',
+    shadow: '1px 2px 2px rgb(0 0 0 / 0.5)',
+    shadowAccent: '2px 5px 2px rgb(0 0 0 / 0.5)',
   },
 };
 
