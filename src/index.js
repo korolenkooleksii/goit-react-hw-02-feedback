@@ -11,7 +11,6 @@ const theme = {
     accent: 'tomato',
   },
 };
-console.log(theme);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
