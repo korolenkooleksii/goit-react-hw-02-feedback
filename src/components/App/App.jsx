@@ -3,7 +3,7 @@ import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Statistics from '../Statistics/Statistics';
 import Section from '../Section/Section';
 import Notification from '../Notification/Notification';
-import {Container} from './App.styled';
+import { Container } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -17,12 +17,9 @@ export class App extends Component {
   };
 
   countTotalFeedback = () => {
-    const values = Object.values(this.state);
-    let total = 0;
-    for (const value of values) {
-      total += value;
-    }
-    return total;
+    return Object.values(this.state).reduce((acc, val) => {
+      return acc + val;
+    }, 0);
   };
 
   countPositiveFeedbackPercentage = () => {
