@@ -13,15 +13,7 @@ export class App extends Component {
   };
 
   onLeaveFeedback = value => {
-    if (value === 'good') {
-      this.setState(prevState => ({ good: prevState.good + 1 }));
-      return;
-    } else if (value === 'neutral') {
-      this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-      return;
-    } else {
-      this.setState(prevState => ({ bad: prevState.bad + 1 }));
-    }
+    this.setState(prevState => ({ [value]: prevState[value] + 1 }));
   };
 
   countTotalFeedback = () => {
