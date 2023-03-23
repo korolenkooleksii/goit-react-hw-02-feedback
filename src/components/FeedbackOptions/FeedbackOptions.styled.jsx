@@ -22,7 +22,8 @@ export const Button = styled.button`
   box-shadow: ${p => p.theme.colors.shadow};
   background-color: ${p => p.theme.colors.accent};
 
-  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    border 250ms ease-in-out;
 
   :hover {
     border: ${`1px solid ${p => p.theme.colors.white}`};
