@@ -14,6 +14,7 @@ export const Button = styled.button`
   gap: 5px;
   border: 1px solid ${p => p.theme.colors.dark};
   border-radius: 4px;
+  text-transform: capitalize;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
